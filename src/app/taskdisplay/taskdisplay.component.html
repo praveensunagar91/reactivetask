@@ -1,0 +1,36 @@
+
+<div class="container">
+  <!-- <div class="col-md-2 taskside">
+    <app-tasksidebar [categoryName]="name" (jinal)="onSideBarClick($event)" ></app-tasksidebar>
+
+  </div>
+  &nbsp;&nbsp;&nbsp; -->
+   <div class="taskcon">
+    <!-- <input  #f (keyup)="search(f.value)"  type="text" placeholder="Enter ID"><br/> -->
+    </div>
+    <br/>
+    <br/>
+<div class="col-md-10">
+
+  <div class="row">
+<table class="table table-hover table-striped" >
+  <thead>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Status</th>
+
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of arr" >
+      <td>{{item.Id}}</td>
+      <td>{{item.Title}}</td>
+      <td>{{item.Status}}</td>
+      <td><button class="btn btn-info" (click)="onTaskDelete(item)" >Delete</button>&nbsp;&nbsp;&nbsp;
+      <button class="btn btn-info" (click)="onTaskEdit(item)"  >Update</button>
+      </td>
+    </tr>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  </div>

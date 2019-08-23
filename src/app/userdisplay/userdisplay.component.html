@@ -1,0 +1,19 @@
+<table class="table" >
+<thead>
+  <th>Email</th>
+  <th>Name</th>
+  <th>Mobile No</th>
+  <th>Action</th>
+</thead>
+<tbody>
+  <tr *ngFor="let item of arr" >
+    <td>{{item.user_email}}</td>
+    <td>{{item.user_name}}</td>
+    <td>{{item.user_mobile_no}}</td>
+    <td><button class="btn btn-info" (click)="onUserDelete(item)" >Delete</button>
+    <button class="btn btn-info" (click)="onUserEdit(item)"  >edit</button>
+    <button class="btn btn-info" (click)="onEditreactive(item)"  >edituserreative</button>
+    </td>
+  </tr>
+</tbody>
+</table>
