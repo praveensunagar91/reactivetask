@@ -36,7 +36,7 @@ export class TaskdisplayComponent implements OnInit {
 
   onTaskEdit(item:task){
     // console.log(item.Id);
-    this._router.navigate(['/edittask',item.Id]);
+    this._router.navigate(['/task/edittask',item.Id]);
   }
   // search(value) {
   //   if (value != "") {

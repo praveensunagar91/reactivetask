@@ -20,9 +20,7 @@ import { Interceptordemo } from './interceptordemo';
 import { Product1Component } from './product1/product1.component';
 import { Usermodule } from './userdisplay/user.module';
 import { AppCustomPreloader } from './appcustomerpreload';
-import { TaskdisplayComponent } from './taskdisplay/taskdisplay.component';
-import { AddtaskComponent } from './taskdisplay/addtask/addtask.component';
-import { EdittaskComponent } from './taskdisplay/edittask/edittask.component';
+
 
 
 @NgModule({
@@ -52,11 +50,7 @@ import { EdittaskComponent } from './taskdisplay/edittask/edittask.component';
 
     Product1Component,
 
-    TaskdisplayComponent,
 
-    AddtaskComponent,
-
-    EdittaskComponent
   ],
   imports: [
     BrowserModule,
